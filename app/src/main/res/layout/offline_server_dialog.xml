@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_420dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_vertical">
+
+    <Button
+        android:id="@+id/id_btn_close"
+        android:background="@drawable/btn_close"
+        android:layout_width="@dimen/_15dp"
+        android:layout_height="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tx_title"
+        android:text="@string/offline_device_server"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_below="@id/tx_title"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@color/hint_login_in"/>
+
+    <EditText
+        android:id="@+id/edt_input_ip"
+        android:background="@drawable/base_edit_input_selector"
+        android:layout_marginTop="@dimen/_35dp"
+        android:layout_below="@id/tx_title"
+        android:paddingLeft="@dimen/_10dp"
+        android:textSize="@dimen/_12sp"
+        android:hint="@string/hint_offline_ip"
+        android:textColorHint="@color/hint_login_in"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_height="@dimen/_35dp" />
+    <EditText
+        android:id="@+id/edt_input_port"
+        android:background="@drawable/base_edit_input_selector"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_below="@id/edt_input_ip"
+        android:paddingLeft="@dimen/_10dp"
+        android:textSize="@dimen/_12sp"
+        android:hint="@string/hint_offline_password"
+        android:textColorHint="@color/hint_login_in"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_height="@dimen/_35dp" />
+    <Button
+        android:id="@+id/id_btn_next"
+        android:background="@drawable/base_btn_negative_selector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_below="@id/edt_input_port"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_18dp"
+        android:textSize="@dimen/_20dp"
+         />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_welcome_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="@dimen/_180dp"
+        android:layout_height="@dimen/_60dp"
+        android:layout_above="@+id/website"
+        android:text="@string/device_init"
+        android:textSize="@dimen/_30sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30dp"
+        android:onClick="Bind"
+        android:enabled="false"
+        android:background="@drawable/welcom_bind_bg" />
+
+    <TextView android:id="@id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_web"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/_18sp"
+        android:layout_above="@+id/copyright"
+        android:layout_marginBottom="@dimen/_10dp"/>
+
+    <TextView
+        android:id="@id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/app_all_rights"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/_18sp"
+        android:layout_marginBottom="@dimen/_20dp" />
+
+</RelativeLayout>

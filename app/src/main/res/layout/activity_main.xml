@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout android:id="@id/menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70dp"
+        android:background="#FFFFFFFF"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <LinearLayout android:id="@+id/tab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:src="@drawable/tab_button_home_nor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tab_diancai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_40dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:src="@drawable/tab_button_diancai_nor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点菜"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tab_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_40dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:src="@drawable/tab_button_dingdan_nor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tab_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_40dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:src="@drawable/tab_button_fuwu_nor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

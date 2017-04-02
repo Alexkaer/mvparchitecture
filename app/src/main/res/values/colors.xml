@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF825F9F</color>
+    <color name="colorPrimaryDark">#FF825F9F</color>
+    <color name="colorAccent">#FFFF4081</color>
+
+    <color name="colorDeskName">#FF9D7196</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="base_btn_negative_normal">#8e729d</color>
+    <color name="base_btn_negative_on">#6e4c80</color>
+    <color name="base_btn_negative_disable">#bfbfbf</color>
+
+    <color name="base_btn_cancel_normal">#8e729d</color>
+    <color name="base_btn_cancel_on">#6e4c80</color>
+    <color name="base_btn_cancel_disable">#bfbfbf</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#e0e0e0</color>
+    <color name="hint_login_in">#cecece</color>
+</resources>

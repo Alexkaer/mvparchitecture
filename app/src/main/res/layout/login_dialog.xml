@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_420dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_vertical">
+
+    <Button
+        android:id="@+id/id_btn_close"
+        android:layout_width="@dimen/_15dp"
+        android:layout_height="@dimen/_15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/btn_close" />
+
+    <TextView
+        android:id="@+id/tx_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_18dp"
+        android:text="@string/login_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_below="@id/tx_title"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@color/hint_login_in"/>
+
+    <EditText
+        android:id="@+id/edt_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35dp"
+        android:layout_below="@id/tx_title"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_35dp"
+        android:background="@drawable/base_edit_input_selector"
+        android:hint="@string/user_name"
+        android:paddingLeft="@dimen/_10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_login_in"
+        android:textSize="@dimen/_12sp" />
+
+    <EditText
+        android:id="@+id/edt_input_userpass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35dp"
+        android:password="true"
+        android:inputType="textPassword"
+        android:layout_below="@id/edt_input_username"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/base_edit_input_selector"
+        android:hint="@string/user_pass"
+        android:paddingLeft="@dimen/_10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_login_in"
+        android:textSize="@dimen/_12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_input_userpass">
+
+        <Button
+            android:id="@+id/id_btn_prev"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_35dp"
+            android:layout_marginBottom="@dimen/_18dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/base_btn_negative_selector"
+            android:text="@string/last"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20dp" />
+
+        <Button
+            android:id="@+id/id_btn_login"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_35dp"
+            android:layout_marginBottom="@dimen/_18dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/base_btn_negative_selector"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20dp" />
+    </LinearLayout>
+</RelativeLayout>
